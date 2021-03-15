@@ -1,40 +1,29 @@
-:root {
- 
-}
-
 
 body{
 margin: 0;
 padding: 0;
+
 }
-.slide {
+
+.outer-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-x: scroll;
+    background-color: brown;   
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+}
+
+.Info, .Experience, .Competence, .Motivation, .Formulaire {
 width: 100vw;
 height: 100vh;
+scroll-snap-align: start;
+background-color: burlywood;
 }
-.wrapper {
-display: flex;
-flex-direction: row;
-width: 400vw;
-transform: rotate(90deg) translateY(-100vh);
-transform-origin: top left;
-}
-.one {
-background: url("/home/tens/quests/Projet1bkg2.png");
-background-size: auto 100vh;
-background-repeat: repeat-x;
-width: 400vw;
-}
-.outer-wrapper {
-width: 100vh;
-height: 100vw;
-transform: rotate(-90deg) translateX(-100vh);
-transform-origin: top left;
-overflow-y: scroll;
-overflow-x: hidden;
-position: absolute;
-scrollbar-width: none;
--ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-display:none;
-}
+
