@@ -1,40 +1,38 @@
-:root {
- 
-}
-
-
 body{
 margin: 0;
 padding: 0;
+
 }
-.slide {
-width: 100vw;
-height: 100vh;
-}
-.wrapper {
-display: flex;
-flex-direction: row;
-width: 400vw;
-transform: rotate(90deg) translateY(-100vh);
-transform-origin: top left;
-}
-.one {
-background: url("/home/tens/quests/Projet1bkg2.png");
-background-size: auto 100vh;
-background-repeat: repeat-x;
-width: 400vw;
-}
+
 .outer-wrapper {
-width: 100vh;
-height: 100vw;
-transform: rotate(-90deg) translateX(-100vh);
-transform-origin: top left;
-overflow-y: scroll;
-overflow-x: hidden;
-position: absolute;
-scrollbar-width: none;
--ms-overflow-style: none;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
 }
-::-webkit-scrollbar {
-display:none;
+
+.wrapper {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background: url("bkg1.png");
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+
+}
+
+.Info, .Experience, .Competence, .Motivation, .Formulaire {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+   /* background-color: burlywood;*/
 }
