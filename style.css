@@ -1,75 +1,89 @@
-:root{
-  --primary : hsla(111, 100%, 17%, 0.931);
-  --secondary: ;
-  --light: hsla(120, 100%, 100%, 0.931);
-  --dark:  rgba(7, 19, 0, 0.931);
-
-  --width-box: 1000px;
-  --font-size: 16pt;
-  --font-family:
-}
-
 body{
 margin: 0;
 padding: 0;
+
 }
 
 .outer-wrapper {
+    width: 100vh;
     height: 100vw;
-    width: 500vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;            /* Ajouter molette*/
+    scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
 }
 
 .wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    background: url("bkg5.jpg");
-    background-size: auto 100vh;
-    background-repeat: repeat-x;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background: url("bkg5.jpg");
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
 }
 
-.info, .experience, .competence, .motivation, .formulaire {
+.Info, .Experience, .Competence, .Motivation, .Formulaire {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
    /* background-color: burlywood;*/
 }
-<<<<<<< HEAD
-.competence{
-  display : flex;
-=======
 
-.Experience {
-  display: flex;
->>>>>>> f71e2117ffafe60c49a342595e2cc71ad93dd24a
-  align-items: center;
-  justify-content: center;
-}
-
-<<<<<<< HEAD
-.compStyle {
-  display : inline-block;
-  justify-content: center;
-  background-color: rgba(160, 110, 110, 0.842);
-}
-=======
-.experience-box {
+form {
+  width: 75%;
   text-align: center;
-  color:white;
-  font-size: 16pt;
-  font-family: "";
-  width: 1000px;
-  background-color: rgba(7, 19, 0, 0.931);
+  margin-left: auto;
+  margin-right: auto;
 }
 
->>>>>>> f71e2117ffafe60c49a342595e2cc71ad93dd24a
+form label {
+  text-align: left;
+  float: left;
+}
+form input {
+  width: 100%;
+  margin: 0 0 20px;
+  height: 30px;
+}
+
+form textarea {
+  width: 100%;
+  margin: 0 0 20px;
+  height: 120px;
+}
+
+form input[type="submit"] {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-width: 1px;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0);
+  width: 80px;
+  float: right;
+  box-shadow: 2px 2px #333;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

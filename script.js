@@ -1,5 +1,5 @@
 const message =
-  "Thank you for submitting your request. Dora the explorator will respond ASAP.";
+  "Thank you for submitting your request. Ivern the friendly tree will respond ASAP.";
 
 if (document.getElementById("contactForm") != null) {
   document
