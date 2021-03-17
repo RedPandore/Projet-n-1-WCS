@@ -24,10 +24,9 @@ padding: 0;
   width: 500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  background: url("bkg1.png");
+  background: url("bkg5.jpg");
   background-size: auto 100vh;
   background-repeat: repeat-x;
-
 }
 
 .Info, .Experience, .Competence, .Motivation, .Formulaire {
