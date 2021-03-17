@@ -39,7 +39,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     justify-content: space-around;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background: url("bkg5.jpg");
+    background: url("bkg11.png");
     background-size: auto 100vh;
     background-repeat: repeat-x;
 }
@@ -69,7 +69,9 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 
 .flotte {
-  float:left;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
   }
 
 
