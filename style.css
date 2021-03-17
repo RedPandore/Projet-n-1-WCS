@@ -1,37 +1,57 @@
+:root{
+  --primary : hsla(111, 100%, 17%, 0.931);
+  --secondary: ;
+  --light: hsla(120, 100%, 100%, 0.931);
+  --dark:  rgba(7, 19, 0, 0.931);
+
+  --width-box: 1000px;
+  --font-size: 16pt;
+  --font-family:
+}
+
 body{
 margin: 0;
 padding: 0;
-
 }
 
 .outer-wrapper {
-    width: 100vh;
     height: 100vw;
+    width: 500vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;
+    scrollbar-width: none;            /* Ajouter molette*/
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
 }
 
 .wrapper {
     display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 500vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background: url("bkg5.jpg");
-  background-size: auto 100vh;
-  background-repeat: repeat-x;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background: url("bkg5.jpg");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
 }
 
-.Info, .Experience, .Competence, .Motivation, .Formulaire {
+.info, .experience, .competence, .motivation, .formulaire {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
    /* background-color: burlywood;*/
+}
+.competence{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compStyle {
+  display : inline-block;
+  justify-content: center;
+  background-color: rgba(160, 110, 110, 0.842);
 }
