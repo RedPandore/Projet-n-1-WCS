@@ -83,3 +83,56 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
   width: 1000px;
   background-color: rgba(7, 19, 0, 0.931);
 }
+
+form {
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form label {
+  text-align: left;
+  float: left;
+}
+
+form input {
+  width: 100%;
+  margin: 0 0 20px;
+  height: 30px;
+}
+
+form textarea {
+  width: 100%;
+  margin: 0 0 20px;
+  height: 120px;
+}
+
+form input[type="submit"] {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-width: 1px;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0);
+  width: 80px;
+  float: right;
+  box-shadow: 2px 2px #333;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
