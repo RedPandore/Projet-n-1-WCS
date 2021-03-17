@@ -60,9 +60,14 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 .competence-box {
   display : inline-block;
   justify-content: center;
-  background-color:var(--dark-box-opacity);
-  color:white;
-  width: 1000px;
+  text-align: center;
+  color:var(--light);
+  font-size: 27pt;
+  font-family: "AnimalCrossing", Arial, Helvetica, sans-serif;
+  width: var(--width-box);
+  background-color: var(--dark-box-opacity);
+  border: var(--border-box);
+  padding: var(--padding-box);
 }
 
 .flotte {
@@ -74,12 +79,15 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
+  }
+  
 .experience-box {
   text-align: center;
-  color:white;
-  font-size: 16pt;
-  width: 1000px;
-  background-color: rgba(7, 19, 0, 0.931);
-}
+  color:var(--light);
+  font-size: 27pt;
+  font-family: "AnimalCrossing", Arial, Helvetica, sans-serif;
+  width: var(--width-box);
+  background-color: var(--dark-box-opacity);
+  border: var(--border-box);
+  padding: var(--padding-box);
+  } 
