@@ -44,14 +44,32 @@ padding: 0;
     scroll-snap-align: start;
    /* background-color: burlywood;*/
 }
+<<<<<<< HEAD
 .competence{
   display : flex;
+=======
+
+.Experience {
+  display: flex;
+>>>>>>> f71e2117ffafe60c49a342595e2cc71ad93dd24a
   align-items: center;
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .compStyle {
   display : inline-block;
   justify-content: center;
   background-color: rgba(160, 110, 110, 0.842);
 }
+=======
+.experience-box {
+  text-align: center;
+  color:white;
+  font-size: 16pt;
+  font-family: "";
+  width: 1000px;
+  background-color: rgba(7, 19, 0, 0.931);
+}
+
+>>>>>>> f71e2117ffafe60c49a342595e2cc71ad93dd24a
