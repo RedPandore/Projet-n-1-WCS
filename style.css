@@ -1,39 +1,87 @@
+@font-face {
+  font-family: "AnimalCrossing";
+  src: url("Animal-Crossing-Wild-World.ttf");
+}
+
+:root{
+  --light: rgb(248, 255, 247);
+  --dark-box-opacity:  rgba(7, 19, 0, 0.931);
+  --border-box: solid rgb(133, 255, 122) 2px; 
+  
+  --padding-box: 8px;
+  --width-box: 1000px;
+  --font-size: 27pt;
+}
+
+
 body{
 margin: 0;
 padding: 0;
-
+font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 
 .outer-wrapper {
-    width: 100vh;
     height: 100vw;
+    width: 500vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;
+    scrollbar-width: none;            /* Ajouter molette*/
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
 }
 
 .wrapper {
     display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 500vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background: url("bkg5.jpg");
-  background-size: auto 100vh;
-  background-repeat: repeat-x;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background: url("bkg5.jpg");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
 }
 
-.Info, .Experience, .Competence, .Motivation, .Formulaire {
+.info, .experience, .competence, .motivation, .formulaire {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
    /* background-color: burlywood;*/
+}
+
+.competence{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.competence-box {
+  display : inline-block;
+  justify-content: center;
+  background-color:var(--dark-box-opacity);
+  color:white;
+  width: 1000px;
+}
+
+.flotte {
+  float:left;
+  }
+
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-box {
+  text-align: center;
+  color:white;
+  font-size: 16pt;
+  width: 1000px;
+  background-color: rgba(7, 19, 0, 0.931);
 }
 
 form {
@@ -47,6 +95,7 @@ form label {
   text-align: left;
   float: left;
 }
+
 form input {
   width: 100%;
   margin: 0 0 20px;
