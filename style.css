@@ -43,13 +43,26 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     background-repeat: repeat-x;
 }
 
-.info, .experience, .competence, .motivation, .formulaire { /*box*/
+.info, .experience, .competence, .formulaire { /*box*/
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     display : flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.info-box {
+  color: var(--light);
+  font-size: var(--font-size);
+  width: var(--width-box);
+  background-color: var(--dark-box-opacity);
+  border: var(--border-box);
+}
+
+.photo {
+  margin-top: 4%;
 }
 
 .competence-box {
@@ -69,7 +82,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
   }
 
 .experience-box {
-  text-align: center;
+  text-align: left;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
