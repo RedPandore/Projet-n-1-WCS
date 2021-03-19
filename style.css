@@ -56,7 +56,7 @@ header {
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     background: url("bkg11.png");
-    background-size: auto 100vh;
+    background-size: 100vw;
     background-repeat: repeat-x;
 }
 
@@ -74,6 +74,9 @@ h2{
 }
 
 .info-box {
+  margin : 5% 5%;
+  display: flex;
+  align-items: left;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
@@ -82,7 +85,9 @@ h2{
 }
 
 .photo {
-  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  margin: 10%;
 }
 
 .competence-box {
