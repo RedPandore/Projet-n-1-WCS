@@ -74,6 +74,9 @@ h2{
 }
 
 .info-box {
+  margin : 5% 5%;
+  display: flex;
+  align-items: left;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
@@ -84,7 +87,9 @@ h2{
 }
 
 .photo {
-  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  margin: 10%;
 }
 
 .competence-box {
