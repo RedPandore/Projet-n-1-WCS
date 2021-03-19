@@ -46,6 +46,7 @@ header {
     scrollbar-width: none;            /* Ajouter molette*/
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -67,6 +68,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: left;
+    color: var(--light);
 }
 
 h2{
@@ -191,6 +193,6 @@ a {
 
 a:hover {
   color: rgb(18, 139, 24);
-  font-size: xxx-large;
+  font-size: x-large;
   transition-duration: 500ms;
 }
