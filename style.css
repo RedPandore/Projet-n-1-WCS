@@ -10,7 +10,7 @@
   --height-box: 60vh;
   --padding-box: 8px;
   --width-box: 60vw;
-  --font-size: 27pt;
+  --font-size: 20pt;
 }
 
 body{
@@ -99,7 +99,7 @@ h2{
 .photo {
   display: flex;
   justify-content: center;
-  margin: 10%;
+  margin: 5%;
 }
 
 .competence-box {
@@ -118,6 +118,10 @@ h2{
   vertical-align: baseline;
   display :flex;
   padding-bottom : var(--padding-box);
+}
+.iconeImage{
+  border : var(--border-box);
+  border-radius: 25% 10%;
 }
 
 .flotte {
@@ -140,7 +144,7 @@ form {
   width: 75%;
   text-align: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
 }
 
 form label {
