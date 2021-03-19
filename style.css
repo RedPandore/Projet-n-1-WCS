@@ -1,15 +1,15 @@
 @font-face {
   font-family: "AnimalCrossing";
-  src: url("Animal-Crossing-Wild-World.ttf");
+  src: url("Police/Animal-Crossing-Wild-World.ttf");
 }
 
 :root{
   --light: rgb(248, 255, 247);
   --dark-box-opacity:  rgba(7, 19, 0, 0.931);
   --border-box: solid rgb(133, 255, 122) 2px; 
-  
+  --height-box: 60vh;
   --padding-box: 8px;
-  --width-box: 1000px;
+  --width-box: 60vw;
   --font-size: 27pt;
 }
 
@@ -20,7 +20,6 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 
 header {
-  position: relative;
   z-index:3;
   text-align: center ;
   position: fixed;
@@ -55,7 +54,7 @@ header {
     justify-content: space-around;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background: url("bkg11.png");
+    background: url("image/bkg11.png");
     background-size: 100vw;
     background-repeat: repeat-x;
 }
@@ -69,6 +68,7 @@ header {
     justify-content: center;
     text-align: left;
 }
+
 h2{
   text-align: center;
 }
@@ -80,8 +80,10 @@ h2{
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
+  height: var(--height-box);
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
+  padding: var(--padding-box);
 }
 
 .photo {
@@ -96,13 +98,15 @@ h2{
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
+  height: var(--height-box);
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
 }
 .competence {
+  height : 5vh;
+  vertical-align: baseline;
   display :flex;
-  padding : 0;
-
+  padding-bottom : var(--padding-box);
 }
 
 .flotte {
@@ -118,6 +122,7 @@ h2{
   width: var(--width-box);
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
+  padding: var(--padding-box);
 }
 
 form {
@@ -145,9 +150,10 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+  background:  var(--dark-box-opacity);
+  color:var(--light);
   border: solid;
+  border-color: var(--border-box);
   border-width: 1px;
   box-shadow: 10px 5px 5px rgb(0, 0, 0);
   width: 80px;
