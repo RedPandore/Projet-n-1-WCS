@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AnimalCrossing";
-  src: url("Animal-Crossing-Wild-World.ttf");
+  src: url("Police/Animal-Crossing-Wild-World.ttf");
 }
 
 :root{
@@ -54,7 +54,7 @@ header {
     justify-content: space-around;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background: url("bkg11.png");
+    background: url("image/bkg11.png");
     background-size: 100vw;
     background-repeat: repeat-x;
 }
