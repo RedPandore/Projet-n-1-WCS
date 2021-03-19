@@ -21,7 +21,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 
 .outer-wrapper {
     height: 100vw;
-    width: 500vw;
+    width: 400vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -43,14 +43,17 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     background-repeat: repeat-x;
 }
 
-.info, .experience, .competence, .formulaire { /*box*/
+.info, .experience, .outer-competence-box, .formulaire { /*box*/
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     display : flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+}
+h2{
+  text-align: center;
 }
 
 .info-box {
@@ -67,18 +70,23 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 
 .competence-box {
   display : flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction:column;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
 }
+.competence {
+  display :flex;
+  padding : 0;
+
+}
 
 .flotte {
   float: left;
+  padding-left: var(--padding-box);
+  padding-right: var(--padding-box);
   }
 
 .experience-box {
