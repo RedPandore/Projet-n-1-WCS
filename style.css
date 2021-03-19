@@ -19,6 +19,23 @@ padding: 0;
 font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 
+header {
+  position: relative;
+  z-index:3;
+  text-align: center ;
+  position: fixed;
+  height: 3%;
+  width: 100%;
+  background-color: black;
+  padding: 3rem;
+}
+
+.profil {
+  margin-top: -3rem;
+  height: 25%;
+  width: auto;
+}
+
 .outer-wrapper {
     height: 100vw;
     width: 400vw;
@@ -133,6 +150,14 @@ form input[type="submit"] {
   box-shadow: 2px 2px #333;
 }
 
+h2 {
+  text-align: center ;
+  color: white;
+  font-size: 200%;
+  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+  text-decoration: none;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -148,5 +173,13 @@ nav {
 
 a {
   color: white;
+  font-size: 1em;
+  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
   text-decoration: none;
+}
+
+a:hover {
+  color: rgb(18, 139, 24);
+  font-size: xxx-large;
+  transition-duration: 500ms;
 }
