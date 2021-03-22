@@ -100,9 +100,16 @@ h2{
   margin: 5%;
 }
 
+
+
+
+
+
 .competence-box {
-  display : flex;
-  flex-direction:column;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  overflow: hidden;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
@@ -111,22 +118,41 @@ h2{
   border: var(--border-box);
   padding: var(--padding-box);
 }
-.competence {
-  height : 5vh;
-  vertical-align: baseline;
-  display :flex;
-  padding-bottom : var(--padding-box);
-}
-.iconeImage{
-  border : var(--border-box);
-  border-radius: 25% 10%;
+
+iframe{
+  display: block;
+  max-width: 100%;
 }
 
-.flotte {
-  float: left;
-  padding-left: var(--padding-box);
-  padding-right: var(--padding-box);
-  }
+.lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.lil-nav a {
+  height: auto;
+
+}
+
+.gallery {
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.gallery_video {
+  scroll-margin-inline: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
 
 .experience-box {
   text-align: left;
