@@ -3,6 +3,32 @@
   src: url("Police/Animal-Crossing-Wild-World.ttf");
 }
 
+@media (max-width: 600px) {
+  * p {
+    font-size: var(--little-font-size);
+  }
+  .lil-nav p {
+     display: none;
+   }
+   .photo {
+     height : 0;
+     width : 0;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+  .wrapper {
+    background: url("image/bkg11.png");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+  }
+  .profil {
+  display : none;
+  }
+ }
+
+
+
 :root{
   --light: rgb(248, 255, 247);
   --dark-box-opacity:  rgba(7, 19, 0, 0.931);
@@ -11,6 +37,8 @@
   --padding-box: 8px;
   --width-box: 60vw;
   --font-size: 20pt;
+  --little-padding-box: 2%;
+  --little-font-size: 15pt;
 }
 
 body{
@@ -18,7 +46,7 @@ margin: 0;
 padding: 0;
 font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
-
+/*                                                                           NAVBARRE                                                               */
 .menu {
   z-index:3;
   text-align: center ;
@@ -40,7 +68,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
   height: 17vh;
   width: 10vw;
 }
-
+/*                                                                           BOX "ARRIERE"                                                               */
 .outer-wrapper {
     height: 100vw;
     width: 400vw;
@@ -49,7 +77,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;            /* Ajouter molette*/
+    scrollbar-width: none;            
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -62,17 +90,17 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     background: url("image/bkg11.png");
-    background-size: 100vw;
+    background-size:100vw;
     background-repeat: repeat-x;
 }
-
-.info, .experience, .outer-competence-box, .formulaire { /*box*/
+/*                                                                           BOX DE SECTION                                                             */
+.info, .experience, .outer-competence-box, .formulaire {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     display : flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: left;
     color: var(--light);
 }
@@ -80,7 +108,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 h2{
   text-align: center;
 }
-
+/*                                                                           INFORMATION                                                               */
 .info-box {
   margin : 5% 5%;
   display: flex;
@@ -99,12 +127,7 @@ h2{
   justify-content: center;
   margin: 5%;
 }
-
-
-
-
-
-
+/*                                                                           COMPETENCE                                                               */
 .competence-box {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -125,7 +148,7 @@ iframe{
 }
 
 .lil-nav {
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
   justify-content: space-around;
@@ -134,11 +157,17 @@ iframe{
 
 .lil-nav a {
   height: auto;
+}
 
+.lil-nav img {
+  border: var(--border-box);
+  border-radius: 25% 10%;
+  width : auto;
 }
 
 .gallery {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -149,10 +178,7 @@ iframe{
   justify-content: space-between;
 }
 
-
-
-
-
+/*                                                                           EXPERIENCE                                                               */
 
 .experience-box {
   text-align: left;
@@ -164,6 +190,14 @@ iframe{
   padding: var(--padding-box);
 }
 
+/*                                                                           FORMULAIRE                                                               */
+
+.formulaire-box{
+  color: var(--light);
+  font-size: var(--font-size);
+  width: var(--width-box);
+  padding: var(--padding-box);
+}
 form {
   width: 75%;
   text-align: center;
@@ -180,20 +214,21 @@ form input {
   width: 100%;
   margin: 0 0 20px;
   height: 30px;
+  background:  var(--dark-box-opacity);
+  color:var(--light);
+  border: var(--border-box);
 }
 
 form textarea {
   width: 100%;
   margin: 0 0 20px;
   height: 120px;
+  background:  var(--dark-box-opacity);
+  color:var(--light);
+  border: var(--border-box);
 }
 
 form input[type="submit"] {
-  background:  var(--dark-box-opacity);
-  color:var(--light);
-  border: solid;
-  border-color: var(--border-box);
-  border-width: 1px;
   box-shadow: 10px 5px 5px rgb(0, 0, 0);
   width: 80px;
   float: right;
@@ -207,6 +242,8 @@ h2 {
   text-shadow: rgb(255, 255, 255) 2px 2px 5px;
   text-decoration: none;
 }
+
+/*                                                                           FOOTER                                                               */
 
 .footer {
   position: fixed;

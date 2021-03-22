@@ -12,13 +12,13 @@
 <?php include_once('php/header.php'); ?>
 
     <div class="outer-wrapper">
-
         <div class="wrapper">
 
             <?php include_once('php/info.php'); ?>
             <?php include_once('php/experience.php'); ?>
             <?php include_once('php/competence.php'); ?>
             <?php include_once('php/form.php'); ?>
+            
         </div>
     </div>
     <?php js($js);?>        
