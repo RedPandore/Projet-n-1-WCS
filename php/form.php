@@ -3,7 +3,7 @@
 <div class="form-titre"> <h2>Contact Ivern Jungle</h2>
   <div class="formulaire-box">
               <form class="contactForm" action="" method="POST">
-                <h2>Contact Ivern's Jungle</h2>
+                
 
                 <?php if (!empty($errors)) : ?>
                   <ul class="error">
