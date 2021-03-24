@@ -21,8 +21,9 @@
             
         </div>
     </div>
+
     <?php js($js);?>        
     <?php include_once('php/footer.php'); ?>
-    <script src="script/script.js"></script>
+    <script src='script/script.js'></script>
 </body>
 </html>
