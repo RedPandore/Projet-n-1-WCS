@@ -207,11 +207,33 @@ form textarea {
   border: var(--border-box);
 }
 
-form input[type="submit"] {
+.button {
   box-shadow: 10px 5px 5px rgb(0, 0, 0);
-  width: 80px;
+  width: 100px;
   float: right;
   box-shadow: 2px 2px #333;
+  color: var(--light);
+  border: var(--border-box);
+  background: var(--dark-box-opacity);
+  padding: 4px;
+}
+
+.button:hover {
+  filter: brightness(115%);
+}
+.button:active {
+  filter: brightness(85%);
+}
+
+.error {
+  background-color: var(--dark-box-opacity);
+  border: var(--border-box);
+  color: red;
+  font-size: 27pt;
+  padding: 8px;
+  border-radius:4px;
+  margin: 2px;
+  list-style: none;
 }
 
 h2 {
