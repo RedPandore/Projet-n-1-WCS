@@ -30,20 +30,26 @@ body{
   position: fixed;
   height: 7%;
   width: 100%;
-  background-color: black;
+  background-color: var(--dark-box-opacity);
 }
 
 .navHeader{
   display: flex;
   justify-content: space-around;
-  padding-top: 1.5%;
+}
+
+.navHeader li{
+  padding-top: 1.2%;
 }
 
 .profil {
-  position : absolute; 
-  margin: -3.5vh;
-  height: 16vh;
-  width: 10vw;
+  position : absolute;
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  max-width: 100%;
+  max-height: auto;
+  
 }
 /*                                                                           BOX "ARRIERE"                                                               */
 .outer-wrapper {
@@ -99,6 +105,12 @@ h2 {
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
+  
+}
+
+
+.photo {
+  margin: 2%;
 }
 
 /*                                                                           COMPETENCE                                                               */
@@ -223,11 +235,19 @@ form textarea {
   padding: 4px;
 }
 
+h2 {
+  text-align: center ;
+  color: white;
+  font-size: 200%;
+  text-shadow: rgb(161, 155, 155) 2px 2px 5px;
+  text-decoration: none;
+
 .button:hover {
   filter: brightness(115%);
 }
 .button:active {
   filter: brightness(85%);
+
 }
 
 .error {
@@ -248,7 +268,7 @@ form textarea {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: black;
+  background-color: var(--dark-box-opacity);
   padding: 1rem;
 }
 
