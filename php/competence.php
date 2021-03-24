@@ -1,5 +1,3 @@
-
-
 <section class="outer-competence-box" id="skills">
 
   <div class="placeFlecheGauche">
@@ -34,7 +32,5 @@
   </div>
           
 </section>
-
- 
 
 <?php include_once('php/cheater.php'); ?>
