@@ -3,29 +3,6 @@
   src: url("Police/Animal-Crossing-Wild-World.ttf");
 }
 
-@media (max-width: 600px) {
-  * p {
-    font-size: var(--little-font-size);
-  }
-  .lil-nav p {
-     display: none;
-   }
-   .photo {
-     height : 0;
-     width : 0;
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-  }
-  .wrapper {
-    background: url("image/bkg11.png");
-    background-size: auto 100vh;
-    background-repeat: repeat-x;
-  }
-  .profil {
-  display : none;
-  }
- }
 
 
 
@@ -42,9 +19,9 @@
 }
 
 body{
-margin: 0;
-padding: 0;
-font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 /*                                                                           NAVBARRE                                                               */
 .menu {
@@ -66,12 +43,13 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 
 .profil {
-  position : absolute; 
+  position : absolute;
   margin: auto;
   height: 150px;
   width: 150px;
   max-width: 100%;
   max-height: auto;
+  
 }
 /*                                                                           BOX "ARRIERE"                                                               */
 .outer-wrapper {
@@ -94,7 +72,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     justify-content: space-around;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background: url("image/bkg11.png");
+    background-image: url("image/bkg11.png");
     background-size:100vw;
     background-repeat: repeat-x;
 }
@@ -110,8 +88,12 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     color: var(--light);
 }
 
-h2{
-  text-align: center;
+h2 {
+  text-align: center ;
+  color: white;
+  font-size: 200%;
+  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+  text-decoration: none;
 }
 /*                                                                           INFORMATION                                                               */
 .info-box {
@@ -125,6 +107,7 @@ h2{
   padding: var(--padding-box);
   
 }
+
 
 .photo {
   margin: 2%;
@@ -143,6 +126,10 @@ h2{
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
+
+}
+.competence-titre {
+  position: fixed;
 }
 
 iframe{
@@ -151,10 +138,12 @@ iframe{
 }
 
 .lil-nav {
+  padding: var(--padding-box);
+  margin-top: 0;
   overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -191,6 +180,10 @@ iframe{
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
+}
+
+.experience-titre{
+  position : fixed;
 }
 
 /*                                                                           FORMULAIRE                                                               */
@@ -231,11 +224,15 @@ form textarea {
   border: var(--border-box);
 }
 
-form input[type="submit"] {
+.button {
   box-shadow: 10px 5px 5px rgb(0, 0, 0);
-  width: 80px;
+  width: 100px;
   float: right;
   box-shadow: 2px 2px #333;
+  color: var(--light);
+  border: var(--border-box);
+  background: var(--dark-box-opacity);
+  padding: 4px;
 }
 
 h2 {
@@ -244,7 +241,26 @@ h2 {
   font-size: 200%;
   text-shadow: rgb(161, 155, 155) 2px 2px 5px;
   text-decoration: none;
+
+.button:hover {
+  filter: brightness(115%);
 }
+.button:active {
+  filter: brightness(85%);
+
+}
+
+.error {
+  background-color: var(--dark-box-opacity);
+  border: var(--border-box);
+  color: red;
+  font-size: 27pt;
+  padding: 8px;
+  border-radius:4px;
+  margin: 2px;
+  list-style: none;
+}
+
 
 /*                                                                           FOOTER                                                               */
 
@@ -273,3 +289,31 @@ a:hover {
   font-size: x-large;
   transition-duration: 500ms;
 }
+
+@media screen and (max-width: 800px) {
+  * p {
+    font-size: var(--little-font-size);
+  }
+  .lil-nav p {
+     display: none;
+  }
+   .photo {
+     height : 100%;
+     width : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+  }
+  .wrapper {
+    background-image: url("image/bkg11.png");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+  }
+  .profil {
+    display : none;
+  }
+  h2{
+    padding:var(--little-padding-box)
+  }
+ }

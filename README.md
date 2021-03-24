@@ -1,4 +1,4 @@
-# project-1
+# project-1 WCS Project 
 Création d'un CV
-WCS Project  Pinguet Loïc, Houry Tennessee, Pouillart Alexandre eand Guichard Maxime.
-Crating a web CV for the fictionnal character of Dora the explorator.
+Pinguet Loïc, Houry Tennessee, Pouillart Alexandre and Guichard Maxime.
+Creation of a CV for the fictional character "Ivern"
