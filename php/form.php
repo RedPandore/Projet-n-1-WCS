@@ -1,4 +1,9 @@
 <section class="formulaire" id="contact">
+
+  <div class="placeFlecheGauche">
+    <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
+  </div>
+
   <div class="formulaire-box">
               <form class="contactForm">
                 <h2>Contact Ivern Jungle</h2>
@@ -17,4 +22,10 @@
                 <input id="button" type="submit" value="Send" />
               </form>
   </div>
+
+  <div class="placeFleche">
+	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
+        </div>
+
+
 </section>

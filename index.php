@@ -8,7 +8,7 @@
     <title>CV Ivern Jungle</title>
 </head>
 <body>
-   
+    
 <?php include_once('php/header.php'); ?>
 
     <div class="outer-wrapper">

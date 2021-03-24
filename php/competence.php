@@ -1,5 +1,10 @@
 
-      <section class="outer-competence-box" id="skills">
+
+<section class="outer-competence-box" id="skills">
+
+  <div class="placeFlecheGauche">
+	<img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
+  </div>
 
             <div class="competence-box"> 
             
@@ -23,6 +28,13 @@
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x4tzn60?queue-enable=false" width="100%" height="100%" class = "gallery_video" id = "image-5"> </iframe> </div>
               </div>
             </div>
+
+  <div class="placeFleche">
+	<img class="fleche" src="image/fleche-scroll.png" alt="fleche">
+  </div>
           
-        </section>
+</section>
+
+ 
+
 <?php include_once('php/cheater.php'); ?>
