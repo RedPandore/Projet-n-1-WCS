@@ -76,7 +76,33 @@ body{
     background-size:100vw;
     background-repeat: repeat-x;
 }
-/*                                                                           BOX DE SECTION                                                             */
+
+/*                                                                           FLECHE                                                           */
+
+@keyframes down{
+	0% {position:relative; top:0px; opacity: 0}
+	50% {position:relative; top:15px; opacity: 0.5}
+	100% {position:relative; top:30px; opacity: 1}
+
+}
+
+.flecheInvisible {
+  opacity: 0%;
+  width: 20%;
+}
+
+.placeFleche{
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+.fleche{
+	animation: down 1s infinite linear alternate; 
+  width: 20%;
+}
+
+/*   
+                                                                        BOX DE SECTION                                                             */
 .info, .experience, .outer-competence-box, .formulaire {
     width: 100vw;
     height: 100vh;

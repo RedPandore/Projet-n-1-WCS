@@ -1,6 +1,13 @@
 <section class="info" id="info">
+
+<div class="placeFleche">
+	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
+        </div>
+
         <div class="info-box">
-           
+
+
+         
 
                 <img class="photo" src="image/PHOTOPROFIL.png" alt="Ma photo" height="200" width="200">
                 
@@ -15,4 +22,9 @@
         
             
     </div>
+  
+        <div class="placeFleche">
+	        <img class="fleche" src="image/fleche-scroll.png" alt="fleche">
+        </div>
+  
 </section>
