@@ -82,8 +82,12 @@ body{
     color: var(--light);
 }
 
-h2{
-  text-align: center;
+h2 {
+  text-align: center ;
+  color: white;
+  font-size: 200%;
+  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+  text-decoration: none;
 }
 /*                                                                           INFORMATION                                                               */
 .info-box {
@@ -110,8 +114,11 @@ h2{
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
-}
 
+}
+.competence-titre {
+  position: fixed;
+}
 
 iframe{
   display: block;
@@ -119,10 +126,12 @@ iframe{
 }
 
 .lil-nav {
+  padding: var(--padding-box);
+  margin-top: 0;
   overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -143,14 +152,6 @@ iframe{
   scroll-behavior: smooth;
 }
 
-.gallery h2{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  text-align: center;
-  width : 100%;
-}
-
-
 .gallery_video {
   scroll-margin-inline: 30vw;
   display: flex;
@@ -167,6 +168,10 @@ iframe{
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
+}
+
+.experience-titre{
+  position : fixed;
 }
 
 /*                                                                           FORMULAIRE                                                               */
@@ -236,13 +241,6 @@ form textarea {
   list-style: none;
 }
 
-h2 {
-  text-align: center ;
-  color: white;
-  font-size: 200%;
-  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
-  text-decoration: none;
-}
 
 /*                                                                           FOOTER                                                               */
 
@@ -272,7 +270,7 @@ a:hover {
   transition-duration: 500ms;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   * p {
     font-size: var(--little-font-size);
   }
@@ -280,9 +278,10 @@ a:hover {
      display: none;
   }
    .photo {
-     height : 0;
-     width : 0;
+     height : 100%;
+     width : 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 5%;
   }
@@ -293,5 +292,8 @@ a:hover {
   }
   .profil {
     display : none;
+  }
+  h2{
+    padding:var(--little-padding-box)
   }
  }
