@@ -2,7 +2,8 @@
       <section class="outer-competence-box" id="skills">
 
             <div class="competence-box"> 
-
+            
+            
               <nav class="lil-nav">
                 
                 <a href="#image-1"> <img class="lil-nav__img" src="image/logo1.png" alt="Skill 1" /> <p>Ami de la forêt</p></a>                
@@ -14,7 +15,7 @@
               </nav>
 
               <div class="gallery">
-                <h2> Compétence </h2>
+           
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x4tzn2p?queue-enable=false" width="100%" height="100%" class = "gallery_video" id = "image-1"> </iframe> </div>
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x4tzn1r?queue-enable=false" width="100%" height="100%" class = "gallery_video" id = "image-2" > </iframe> </div>
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x4tzn3z?queue-enable=false" width="100%" height="100%" class = "gallery_video" id = "image-3" > </iframe> </div>
@@ -22,6 +23,6 @@
                 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x4tzn60?queue-enable=false" width="100%" height="100%" class = "gallery_video" id = "image-5"> </iframe> </div>
               </div>
             </div>
-            
+          
         </section>
 <?php include_once('php/cheater.php'); ?>

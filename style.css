@@ -3,29 +3,6 @@
   src: url("Police/Animal-Crossing-Wild-World.ttf");
 }
 
-@media (max-width: 600px) {
-  * p {
-    font-size: var(--little-font-size);
-  }
-  .lil-nav p {
-     display: none;
-   }
-   .photo {
-     height : 0;
-     width : 0;
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-  }
-  .wrapper {
-    background: url("image/bkg11.png");
-    background-size: auto 100vh;
-    background-repeat: repeat-x;
-  }
-  .profil {
-  display : none;
-  }
- }
 
 
 
@@ -42,9 +19,9 @@
 }
 
 body{
-margin: 0;
-padding: 0;
-font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 }
 /*                                                                           NAVBARRE                                                               */
 .menu {
@@ -65,7 +42,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
 .profil {
   position : absolute; 
   margin: -3.5vh;
-  height: 17vh;
+  height: 16vh;
   width: 10vw;
 }
 /*                                                                           BOX "ARRIERE"                                                               */
@@ -89,7 +66,7 @@ font-family: "AnimalCrossing", Helvetica, Arial, sans-serif;
     justify-content: space-around;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background: url("image/bkg11.png");
+    background-image: url("image/bkg11.png");
     background-size:100vw;
     background-repeat: repeat-x;
 }
@@ -110,23 +87,16 @@ h2{
 }
 /*                                                                           INFORMATION                                                               */
 .info-box {
-  margin : 5% 5%;
   display: flex;
-  align-items: left;
+  flex-direction: row;
   color: var(--light);
   font-size: var(--font-size);
   width: var(--width-box);
-  height: var(--height-box);
   background-color: var(--dark-box-opacity);
   border: var(--border-box);
   padding: var(--padding-box);
 }
 
-.photo {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
-}
 /*                                                                           COMPETENCE                                                               */
 .competence-box {
   display: grid;
@@ -141,6 +111,7 @@ h2{
   border: var(--border-box);
   padding: var(--padding-box);
 }
+
 
 iframe{
   display: block;
@@ -171,6 +142,14 @@ iframe{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+
+.gallery h2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  width : 100%;
+}
+
 
 .gallery_video {
   scroll-margin-inline: 30vw;
@@ -270,3 +249,27 @@ a:hover {
   font-size: x-large;
   transition-duration: 500ms;
 }
+
+@media screen and (max-width: 600px) {
+  * p {
+    font-size: var(--little-font-size);
+  }
+  .lil-nav p {
+     display: none;
+  }
+   .photo {
+     height : 0;
+     width : 0;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+  .wrapper {
+    background-image: url("image/bkg11.png");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+  }
+  .profil {
+    display : none;
+  }
+ }

@@ -7,3 +7,4 @@ function js($js) {
 
 $js = "I like Konami !!!";
 
+
