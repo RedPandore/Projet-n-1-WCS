@@ -1,7 +1,9 @@
 <section class="formulaire" id="contact">
+<div class="form-titre"> <h2>Contact Ivern Jungle</h2>
   <div class="formulaire-box">
+  
               <form class="contactForm">
-                <h2>Contact Ivern Jungle</h2>
+                
                 <label for="name">Name:</label><br />
                 <input type="text" id="name" name="name" value="Margerite" /><br />
                 <label for="email">Email:</label><br />
@@ -17,4 +19,5 @@
                 <input id="button" type="submit" value="Send" />
               </form>
   </div>
+</div> 
 </section>

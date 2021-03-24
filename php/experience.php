@@ -1,6 +1,7 @@
 <section class="experience" id="xp">
+<div class= "experience-titre"> <h2>Expérience</h2> 
             <div class="experience-box">
-              <h2>Expérience</h2>
+             
               <p>Lié de passion avec la nature, je suis à la recherche d'un nouveau poste en tant que garde forestier, par amour de la faune et de la flore.</p>
                 <div class="cv-box">
 
@@ -10,4 +11,5 @@
                   <p>07/2017 - 02/2021 : Garde forestier à "Riot Games"</p>
                </div>
             </div>
+          </div>
           </section>
