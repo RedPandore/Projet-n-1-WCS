@@ -8,9 +8,9 @@
     <title>CV Ivern Roncepied</title>
 </head>
 <body>
-   
-<?php require_once('php/header.php'); ?>
 
+<?php require_once('php/header.php'); ?>
+  
     <div class="outer-wrapper">
         <div class="wrapper">
 

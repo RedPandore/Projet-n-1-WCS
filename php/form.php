@@ -1,9 +1,17 @@
 <?php require_once ("form-rules.php"); ?>
 <section class="formulaire" id="contact">
-<div class="form-titre"> <h2>Contact Ivern Jungle</h2>
+
+
+  <div class="placeFlecheGauche">
+    <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
+  </div>
+
+
+<div class="form-titre"> <h2>Contact Ivern Roncepied</h2>
+
   <div class="formulaire-box">
               <form class="contactForm" action="" method="POST">
-                <h2>Contact Ivern's Jungle</h2>
+                
 
                 <?php if (!empty($errors)) : ?>
                   <ul class="error">
@@ -25,5 +33,11 @@
                 <button class="button">Send</button>
               </form>
   </div>
-</div> 
+
+
+  <div class="placeFleche">
+	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
+        </div>
+
+
 </section>
