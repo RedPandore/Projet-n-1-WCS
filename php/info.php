@@ -1,6 +1,6 @@
 <section class="info" id="info">
 
-<div class="placeFleche">
+  <div class="placeFleche">
 	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
         </div>
 
