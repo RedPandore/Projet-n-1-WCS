@@ -151,6 +151,7 @@ body{
 .fleche{
 	animation: down 1s infinite linear alternate; 
   width: 20%;
+  filter: invert(100%)
 }
 
 /*                                                                           BOX DE SECTION                                                             */
@@ -437,7 +438,7 @@ h2 {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 815px){
   .wrapper {
     background-image: url("image/bkg11.png");
     background-size: auto 100vh;
@@ -449,7 +450,7 @@ h2 {
   }
 
   h2{
-    padding:var(--little-padding-box)
+    padding:0px;
   }
 
   .flecheInvisible {
@@ -509,5 +510,8 @@ h2 {
     background-image: url("image/bkg11.png");
     background-size: auto 100vh;
     background-repeat: repeat-x;
+  }
+  .lil-nav p {
+    display: none;
   }
  }
