@@ -1,9 +1,9 @@
 <section class="experience" id="xp">
 
 
-  <div class="placeFlecheGauche">
+<a href="#info"><div class="placeFlecheGauche">
 	<img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
-  </div>
+  </div></a>
  <div> <h2>Expérience</h2>
         <div class="experience-box">
           
@@ -19,8 +19,8 @@
               </div>
         </div>
 </div>
-  <div class="placeFleche">
+<a href="#skills"> <div class="placeFleche">
 	<img class="fleche" src="image/fleche-scroll.png" alt="fleche">
-  </div>
+  </div></a>
 
 </section>  

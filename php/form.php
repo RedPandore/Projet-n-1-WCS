@@ -2,17 +2,16 @@
 <section class="formulaire" id="contact">
 
 
-  <div class="placeFlecheGauche">
+<a href="#skills"><div class="placeFlecheGauche">
     <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
-  </div>
+  </div></a>
 
 
-<div class="form-titre"> <h2>Contact Ivern Roncepied</h2>
+      <div class="form-titre"> <h2>Contact Ivern Roncepied</h2>
 
-  <div class="formulaire-box">
+        <div class="formulaire-box">
               <form class="contactForm" action="" method="POST">
                 
-
                 <?php if (!empty($errors)) : ?>
                   <ul class="error">
                     <?php foreach ($errors as $error) : ?>
@@ -32,9 +31,10 @@
 
                 <button class="button">Send</button>
               </form>
-  </div>
+          </div>
 
-</div>
+        </div>
+
   <div class="placeFleche">
 	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
         </div>

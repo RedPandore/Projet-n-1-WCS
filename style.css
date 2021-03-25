@@ -172,6 +172,9 @@ h2 {
   text-shadow: rgb(255, 255, 255) 2px 2px 5px;
   text-decoration: none;
 }
+
+
+
 /*                                                                           INFORMATION                                                               */
 .info-box {
   display: grid;
@@ -191,7 +194,7 @@ h2 {
 
 .info-box ul{
   margin: auto;
-  list-style-type:'🌿   '; 
+  list-style-type:'🌿 '; 
 }
 
 .info-box li{
@@ -256,14 +259,15 @@ iframe{
 }
 
 .gallery {
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
+
 .gallery_video {
-  scroll-margin-inline: 30vw;
+  scroll-margin-inline: 24.2vw;
   display: flex;
   justify-content: space-between;
 }
@@ -415,6 +419,7 @@ h2 {
 .menu-footer .current a {
   color: #ffffff;
 }
+
 .menu-footer a:hover:before,
 .menu-footer .current a:before {
   opacity: 1;
@@ -447,6 +452,17 @@ h2 {
     padding:var(--little-padding-box)
   }
 
+  .flecheInvisible {
+    opacity: 0%;
+    width: 50%;
+  }
+
+  .fleche{
+    animation: down 1s infinite linear alternate; 
+    width: 50%;
+  }
+
+
   .profil {
     display : none;
   }
@@ -458,6 +474,10 @@ h2 {
  }
 
  .info-box p{
+
+    width : 100%;
+    margin: 5%;
+
  }
 
  .info-box ul{
@@ -465,21 +485,37 @@ h2 {
   margin : 0;
  }
 
+ .gallery_video {
+  scroll-margin-inline: 27.5vw;
+}
+
   .lil-nav p {
      display: none;
   }
   
-  .formulaire-box{
-    width : 50vh;
-  }
 
  .button {
    width : 100%;
  }
-  .info-box li{
-    font-size:14px;
+
+ li{
+    font-size: 14px;
     font-weight: 0%;
     margin-left: 50%;
   }
  
+ }
+ 
+ /* RESPONSIVE iPAD PAYSAGE*/
+ @media screen 
+ and (min-width: 1000px) and (max-width: 1400px)
+ and (min-height: 550px) and (max-height: 800px) {
+   .profil{
+     display: none;
+   }
+   .wrapper {
+    background-image: url("image/bkg11.png");
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+  }
  }
