@@ -7,7 +7,7 @@
         <div class="info-box">
                 <img class="photo" src="image/PHOTOPROFIL.png" alt="Ma photo" height="200" width="200">
                 
-                <ul>
+                <ul class="information">
                     <li>Ivern Roncepied</li>
                     <li>07 07 07 07 07</li>
                     <li>7 Rue de la Jungle 77777 Jungle-sur-loire</li>
