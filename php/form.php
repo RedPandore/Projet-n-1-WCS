@@ -12,13 +12,13 @@
         <div class="formulaire-box">
               <form class="contactForm" action="" method="POST">
                 
-              <?php if (!empty($errors)) : ?>
+                <?php if (!empty($errors)) : ?>
                   <ul class="error">
                     <?php foreach ($errors as $error) : ?>
                       <li><?= $error ?></li>
                     <?php endforeach; ?>
                   </ul>
-              <?php endif; ?>
+                <?php endif; ?>
 
                 <label for="name">Name:</label> <br/>
                 <input type="text" id="name" name="name" placeholder="Marguerite Roncepied" value="<?= $data['name'] ?? '' ?>" required> <br/>
@@ -32,7 +32,7 @@
                 <button class="button">Send</button>
               </form>
           </div>
-          
+
         </div>
 
   <div class="placeFleche">
