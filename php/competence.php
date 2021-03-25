@@ -1,8 +1,8 @@
 <section class="outer-competence-box" id="skills">
 
-  <div class="placeFlecheGauche">
+<a href="#xp"><div class="placeFlecheGauche">
     <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
-  </div>
+  </div></a>
         <div> <h2>Compétence</h2>
 
             <div class="competence-box"> 
@@ -28,9 +28,9 @@
             </div>
         </div>
 
-    <div class="placeFleche">
+        <a href="#contact"> <div class="placeFleche">
 	    <img class="fleche" src="image/fleche-scroll.png" alt="fleche">
-    </div>
+    </div></a>
           
 </section>
 

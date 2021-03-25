@@ -2,9 +2,9 @@
 <section class="formulaire" id="contact">
 
 
-  <div class="placeFlecheGauche">
+<a href="#skills"><div class="placeFlecheGauche">
     <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
-  </div>
+  </div></a>
 
 
       <div class="form-titre"> <h2>Contact Ivern Roncepied</h2>

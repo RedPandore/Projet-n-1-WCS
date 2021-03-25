@@ -19,8 +19,8 @@
             
     </div>
   </div>
-        <div class="placeFleche">
-	        <img class="fleche" src="image/fleche-scroll.png" alt="fleche">
-        </div>
+  <a href="#xp"> <div class="placeFleche">
+        <img class="fleche" src="image/fleche-scroll.png" alt="fleche">
+        </div>  </a>
   
 </section>
