@@ -91,7 +91,7 @@ body{
 }
 
 .navHeader li {
-  padding-top: 0.7%;
+  padding-top: 0.4%;
 }
 
 .profil {
@@ -363,19 +363,75 @@ h2 {
 
 /*                                                                           FOOTER                                                               */
 
-.footer {
-  position: fixed;
+.menu-footer {
   bottom: 0;
+  text-align: center ;
+  position: fixed;
+  height: 7%;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
   background-color: var(--dark-box-opacity);
-  padding: 1rem;
+  font-size: var(--font-size);
+}
+
+.menu-footer * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu-footer li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.4em 0.8em;
+  padding: 0;
+}
+
+.menu-footer a {
+  padding: 0 0.7em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu-footer a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 15%;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+  border-left: var(--border-box);
+  border-right: var(--border-box);
+}
+
+.menu-footer a:hover,
+.menu-footer .current a {
+  color: #ffffff;
+}
+.menu-footer a:hover:before,
+.menu-footer .current a:before {
+  opacity: 1;
+  left: 0;
+  right: 0;
 }
 
 .footerNav {
   display: flex;
   justify-content: space-around;
+  padding-top: 1.1%;
 }
 
+.footerNav li {
+  margin-bottom: 0;
+}
 
 @media screen and (max-width: 800px) {
   .wrapper {
