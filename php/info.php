@@ -3,12 +3,8 @@
   <div class="placeFleche">
 	        <img class="flecheInvisible" src="image/fleche-scroll.png" alt="fleche">
         </div>
-
+<div> <h2>Information</h2>
         <div class="info-box">
-
-
-         
-
                 <img class="photo" src="image/PHOTOPROFIL.png" alt="Ma photo" height="200" width="200">
                 
                 <ul>
@@ -22,7 +18,7 @@
         
             
     </div>
-  
+  </div>
         <div class="placeFleche">
 	        <img class="fleche" src="image/fleche-scroll.png" alt="fleche">
         </div>

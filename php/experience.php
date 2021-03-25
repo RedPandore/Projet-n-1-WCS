@@ -4,9 +4,9 @@
   <div class="placeFlecheGauche">
 	<img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
   </div>
-
+ <div> <h2>Expérience</h2>
         <div class="experience-box">
-          <h2>Expérience</h2>
+          
             <p>Lié de passion avec la nature, je suis à la recherche d'un nouveau poste en tant que garde forestier, par amour de la faune et de la flore.</p>
               <div class="cv-box">
 
@@ -18,7 +18,7 @@
                 
               </div>
         </div>
-
+</div>
   <div class="placeFleche">
 	<img class="fleche" src="image/fleche-scroll.png" alt="fleche">
   </div>

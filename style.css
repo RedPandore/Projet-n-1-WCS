@@ -153,8 +153,7 @@ body{
   width: 20%;
 }
 
-/*   
-                                                                        BOX DE SECTION                                                             */
+/*                                                                           BOX DE SECTION                                                             */
 .info, .experience, .outer-competence-box, .formulaire {
     width: 100vw;
     height: 100vh;
@@ -377,7 +376,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
   .wrapper {
     background-image: url("image/bkg11.png");
     background-size: auto 100vh;
@@ -424,6 +423,10 @@ h2 {
  .button {
    width : 100%;
  }
-  
+  li{
+    font-size: var(--little-font-size);
+    padding: var(--little-padding-box);
+    font-weight: 0%;
+  }
  
  }
