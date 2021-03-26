@@ -3,7 +3,7 @@
 
 
 <a href="#skills"><div class="placeFlecheGauche">
-    <img class="fleche" src="image/fleche-scroll-gauche.png" alt="fleche">
+    <img class="flechegauche" src="image/fleche-scroll-gauche.png" alt="fleche">
   </div></a>
 
 
