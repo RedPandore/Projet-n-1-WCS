@@ -152,7 +152,8 @@ body{
 .fleche{
 	animation: down 1s infinite linear alternate; 
   width: 20%;
-  filter: invert(100%)
+  filter: invert(100%);
+  padding: 20px;
 }
 
 /*                                                                           BOX DE SECTION                                                             */
@@ -541,6 +542,7 @@ h2 {
     background-image: url("image/bkg11.png");
     background-size: auto 100vh;
     background-repeat: repeat-x;
+    background-attachment: fixed;
   }
   .lil-nav p {
     display: none;
