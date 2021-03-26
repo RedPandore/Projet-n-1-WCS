@@ -487,9 +487,16 @@ form textarea {
     width: 50%;
   }
 
-  .fleche{
-    animation: down 1s infinite linear alternate; 
-    width: 50%;
+  .flechegauche{
+    animation: left 1s infinite linear alternate; 
+    width: 25%;
+    padding:5px;
+  }
+
+  .flechedroite{
+    animation: right 1s infinite linear alternate; 
+    width: 25%;
+    padding:5px;
   }
 
 
