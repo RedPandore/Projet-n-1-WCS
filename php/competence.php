@@ -9,11 +9,11 @@
             
               <nav class="lil-nav">
                
-                <a href="#image-1"> <img class="lil-nav__img" src="image/logo1.png" alt="Skill 1" /> <div class="nom-sort">Ami de la forêt</div></a>   
-                <a href="#image-2"> <img class="lil-nav__img" src="image/logo2.png" alt="Skill 2" /> <div class="nom-sort">Enracinement</div></a>             
-                <a href="#image-3"> <img class="lil-nav__img" src="image/logo3.png" alt="Skill 3" /> <div class="nom-sort">Main verte</div></a>             
-                <a href="#image-4"> <img class="lil-nav__img" src="image/logo4.png" alt="Skill 4" /> <div class="nom-sort">Graine à retardement</div></a>            
-                <a href="#image-5"> <img class="lil-nav__img" src="image/logo5.png" alt="Skill 5" /> <div class="nom-sort">Marguerite !</div></a>
+                <a href="#image-1"> <img class="lil-nav__img" src="image/logo1.png" alt="Skill 1" /> Ami de la forêt</a>   
+                <a href="#image-2"> <img class="lil-nav__img" src="image/logo2.png" alt="Skill 2" /> Enracinement</a>             
+                <a href="#image-3"> <img class="lil-nav__img" src="image/logo3.png" alt="Skill 3" /> Main verte</a>             
+                <a href="#image-4"> <img class="lil-nav__img" src="image/logo4.png" alt="Skill 4" /> Graine à retardement</a>            
+                <a href="#image-5"> <img class="lil-nav__img" src="image/logo5.png" alt="Skill 5" /> Marguerite !</a>
               
               </nav>
 
