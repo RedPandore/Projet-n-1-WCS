@@ -11,7 +11,7 @@
   --dark-box-opacity:  rgba(7, 19, 0, 0.931);
   --border-box: solid rgb(133, 255, 122) 2px; 
   --height-box: 60vh;
-  --padding-box: 8px;
+  --padding-box: 16px;
   --width-box: 80vw;
   --font-size: 20pt;
   --little-padding-box: 2%;
@@ -210,7 +210,7 @@ h2 {
 /*                                                                           COMPETENCE                                                               */
 .competence-box {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 2.5fr 10fr;
   grid-gap: 20px;
   overflow: hidden;
   color: var(--light);
@@ -491,6 +491,14 @@ h2 {
   padding-left: 20%;
   margin : 0;
  }
+
+.competence-box{
+ grid-template-columns: 1.5fr 5fr;
+}
+
+.nom-sort{
+  display: none;
+}
 
  .gallery_video {
   scroll-margin-inline: 27.5vw;
