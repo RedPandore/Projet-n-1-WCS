@@ -130,6 +130,14 @@ body{
     background-repeat: repeat-x;
 }
 
+h2 {
+  text-align: center ;
+  color: var(--light);
+  font-size: 300%;
+  text-shadow: rgb(161, 155, 155) 2px 2px 5px;
+  text-decoration: none;
+}
+
 /*                                                                           FLECHE                                                           */
 
 @keyframes left{
@@ -183,14 +191,6 @@ body{
     color: var(--light);
 }
 
-h2 {
-  text-align: center ;
-  color: var(--light);
-  font-size: 200%;
-  text-shadow: rgb(255, 255, 255) 2px 2px 5px;
-  text-decoration: none;
-}
-
 
 
 /*                                                                           INFORMATION                                                               */
@@ -226,7 +226,7 @@ h2 {
 /*                                                                           COMPETENCE                                                               */
 .competence-box {
   display: grid;
-  grid-template-columns: 2.5fr 10fr;
+  grid-template-columns: 3fr 10fr;
   grid-gap: 20px;
   overflow: hidden;
   color: var(--light);
@@ -262,6 +262,8 @@ iframe{
   color: white;
   font-size: 1em;
   text-decoration: none;
+  padding:10px;
+
 }
 
 .lil-nav a:hover {
@@ -324,6 +326,7 @@ form {
 form label {
   text-align: left;
   float: left;
+  padding: 8px;
 }
 
 form input {
@@ -357,13 +360,7 @@ form textarea {
   font-size: 22px;
 }
 
-h2 {
-  text-align: center ;
-  color: white;
-  font-size: 200%;
-  text-shadow: rgb(161, 155, 155) 2px 2px 5px;
-  text-decoration: none;
-}
+
 .button:hover {
   filter: brightness(115%);
 }
@@ -480,6 +477,7 @@ h2 {
 
   h2{
     padding:0px;
+    font-size: 200%;
   }
 
   .flecheInvisible {
@@ -503,6 +501,10 @@ h2 {
     margin: 5%;
  }
 
+ .info-box{
+   padding-bottom: 0;
+ }
+
  .info-box ul{
   padding-left: 20%;
   margin : 0;
@@ -512,10 +514,6 @@ h2 {
  grid-template-columns: 1.5fr 5fr;
 }
 
-.nom-sort{
-  display: none;
-}
-
  .gallery_video {
   scroll-margin-inline: 27.5vw;
 }
@@ -523,11 +521,12 @@ h2 {
   .lil-nav p {
      display: none;
   }
-  
 
- .button {
-   width : 100%;
- }
+  .lil-nav a{
+    font-size : 0px;
+    padding:0px;
+  }
+  
 
  li{
     font-size: 14px;
@@ -542,6 +541,19 @@ h2 {
     padding-right : 4px;
     padding-left : 4px;
     padding-top: 0.2%;
+  }
+  @keyframes left{
+    0% {position:relative; left:0px; opacity: 0}
+    50% {position:relative; left:3.5px; opacity: 0.5}
+    100% {position:relative; left:6px; opacity: 1}
+  
+  }
+  
+  @keyframes right{
+    0% {position:relative; right:0px; opacity: 0}
+    50% {position:relative; right:3.5px; opacity: 0.5}
+    100% {position:relative; right:6px; opacity: 1}
+  
   }
  
 }
@@ -567,14 +579,6 @@ h2 {
 /* RESPONSIVE TEL PAYSAGE */
 @media screen 
 and (max-height: 415px) and (max-width: 820px) {
-  .flechegauche{
-    padding-left: 10%;
-    padding-right:10%;
-  }
-  .flechedroite{
-    padding-left: 10%;
-    padding-right:10%;
-  }
 
 
   .menu {
@@ -586,6 +590,18 @@ and (max-height: 415px) and (max-width: 820px) {
     padding-left : 4px;
   }
 
+  .competence-box{
+    padding:0;
+  }
+
+  .formulaire-box{
+    padding:0;
+  }
+  form label {
+    text-align: left;
+    float: left;
+    padding: 5px;
+  }
     #message {
     height: 30px;
    margin: auto;
@@ -597,7 +613,7 @@ and (max-height: 415px) and (max-width: 820px) {
   margin: auto;
   } 
   .button {
-    height: 40px;
+    height: 30px;
     margin-bottom: 50px;
     width: 100%;
   }
