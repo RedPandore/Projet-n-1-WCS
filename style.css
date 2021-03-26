@@ -15,7 +15,7 @@
   --width-box: 80vw;
   --font-size: 20pt;
   --little-padding-box: 2%;
-  --little-font-size: 15pt;
+  --little-font-size: 12pt;
   --green-color:  rgb(133, 255, 122);
 }
 
@@ -265,7 +265,10 @@ iframe{
   font-size: 1em;
   text-decoration: none;
   padding:10px;
+}
 
+.lil-nav a img{
+  margin-right : 6px;
 }
 
 .lil-nav a:hover {
@@ -474,7 +477,7 @@ form textarea {
   }
 
   * p {
-    font-size: 14px;
+    font-size: var(--little-font-size);
   }
 
   h2{
@@ -575,6 +578,9 @@ form textarea {
  @media screen 
  and (min-width: 1000px) and (max-width: 1400px)
  and (min-height: 550px) and (max-height: 800px) {
+  * p {
+    font-size: var(--little-font-size);
+  }
    .profil{
      display: none;
    }
@@ -584,12 +590,20 @@ form textarea {
     background-repeat: repeat-x;
     background-attachment: fixed;
   }
+  .lil-nav a{
+    font-size: var(--little-font-size);
+  }
   .lil-nav p {
     display: none;
+  }
+  .info-box{
+    padding-bottom: 0;
   }
   .info-box li{
     font-size: var(--little-font-size);
   }
+
+
  }
 
 /* RESPONSIVE TEL PAYSAGE */
@@ -604,6 +618,11 @@ and (max-height: 415px) and (max-width: 820px) {
   .menu a {
     padding-right : 4px;
     padding-left : 4px;
+  }
+
+  .info-box p{
+    padding-bottom: 3px;
+    margin-bottom: 0;
   }
 
   .competence-box{
